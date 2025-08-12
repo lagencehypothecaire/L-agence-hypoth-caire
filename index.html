@@ -4,11 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>L’Agence Hypothécaire — Refinancement & Consolidation</title>
-  <meta name="description" content="Refinancement hypothécaire et consolidation de dettes partout au Québec. Évaluez votre admissibilité en 30 secondes.">
+  <meta name="description" content="Courtier hypothécaire au Québec — refinancement, consolidation de dettes, taux compétitifs, conseils pour améliorer votre cote de crédit. Estimation rapide et analyse personnalisée.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <meta name="robots" content="index,follow">
+  <meta name="keywords" content="courtier hypothécaire Québec, refinancement hypothécaire, consolidation de dettes, meilleur taux hypothécaire, cote de crédit, améliorer cote de crédit, dossier de crédit, ratio d’endettement, prêteur alternatif, prêteur privé, hypothèque Québec">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "L’Agence Hypothécaire", "url": "https://lagencehypothecaire.com", "logo": "https://lagencehypothecaire.com/assets/logo.png", "telephone": "+1-418-952-9839", "email": "Jason@lagencehypothecaire.com", "address": {"@type": "PostalAddress", "streetAddress": "1220, boul. Lebourgneuf, bureau 150", "addressLocality": "Québec", "addressRegion": "QC", "postalCode": "G2K 2G4", "addressCountry": "CA"}}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Comment améliorer ma cote de crédit?", "acceptedAnswer": {"@type": "Answer", "text": "Payez à temps, gardez une faible utilisation (<30 %), surveillez votre rapport de crédit et réduisez vos dettes graduellement."}}, {"@type": "Question", "name": "Pourquoi travailler avec un courtier hypothécaire?", "acceptedAnswer": {"@type": "Answer", "text": "Pour comparer plusieurs prêteurs, négocier les meilleures conditions et optimiser votre dossier sans multiplier les demandes de crédit."}}, {"@type": "Question", "name": "Puis-je consolider mes dettes avec mon hypothèque?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, avec le refinancement, vous pouvez regrouper cartes et prêts en un seul paiement, souvent à un taux plus bas."}}]}</script>
+
 </head>
 <body>
   <header class="site-header">
@@ -16,7 +22,9 @@
       <a class="brand" href="#"><img src="assets/logo.png" alt="L’Agence Hypothécaire" height="36"></a>
       <nav class="nav">
         <a href="#services">Services</a>
-        <a href="#academie">Académie</a>
+        <a href="#professionnels">Nos professionnels</a>
+        <a href="#pourquoi-courtier">Pourquoi un courtier</a>
+        <a href="#conseils">Conseils</a>
         <a href="#temoignages">Témoignages</a>
         <a href="#faq">FAQ</a>
         <a href="#contact" class="btn btn-outline">Nous joindre</a>
@@ -39,7 +47,15 @@
           <li>Amélioration graduelle de la cote</li>
         </ul>
       </div>
-      <div class="hero-art" aria-hidden="true"><img src="assets/portrait1.jpg" alt="Conseiller - L’Agence Hypothécaire" style="max-width:100%;border-radius:12px"></div>
+      <div class="hero-art">
+        <img class="hero-photo" src="assets/portrait-head.jpg" alt="Conseiller — L’Agence Hypothécaire">
+          <div class="hero-card-line"></div>
+          <div class="hero-card-line"></div>
+          <div class="hero-card-line"></div>
+          <span class="hero-card-badge">Économies estimées*</span>
+          <strong class="hero-saving" id="heroSaving">—</strong>
+          <small>*Estimation indicative</small>
+        </div>
     </div>
   </section>
 
@@ -86,27 +102,22 @@
             <li>Accompagnement A → Z</li>
           </ul>
         </div>
+    </div>
+  </section>
+  <section id="professionnels" class="professionnels">
+    <div class="container">
+      <h2>Nos professionnels</h2>
+      <p>Notre équipe de <strong>courtiers hypothécaires agréés</strong> accompagne les propriétaires partout au Québec. Expertise, transparence et rapidité — pour un financement <em>clair</em> et <em>avantageux</em>.</p>
+      <div class="team-grid">
+        <div class="team-card">
+          <img src="assets/portrait-head.jpg" alt="Courtier hypothécaire — L’Agence Hypothécaire">
+          <h3>Courtier principal</h3>
+          <p>Spécialiste en <strong>refinancement</strong> et <strong>consolidation de dettes</strong>, compare plusieurs prêteurs pour optimiser votre <strong>taux</strong> et vos <strong>conditions</strong>.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="academie" class="academie">
-    <div class="container">
-      <div class="split">
-        <div>
-          <h2>Académie</h2>
-          <p>Des capsules courtes pour comprendre vos options: pénalités, ratios, prêteurs alternatifs, erreurs à éviter, etc.</p>
-          <ul class="checklist">
-            <li>Refinancer sans mauvaise surprise</li>
-            <li>Consolider sans rechuter</li>
-            <li>Améliorer la cote intelligemment</li>
-          </ul>
-          <a class="btn btn-outline" href="#contact">Recevoir les prochaines capsules</a>
-        </div>
-        <div class="video-placeholder" aria-label="Espace vidéo"></div>
-      </div>
-    </div>
-  </section>
 
   <section id="temoignages" class="testimonials">
     <div class="container">
@@ -124,18 +135,20 @@
     </div>
   </section>
 
-<section id="apropos" class="about">
-  <div class="container">
-    <div class="split">
-      <div>
-        <h2>À propos</h2>
-        <p>Je m'appelle [Votre Nom], fondateur de L’Agence Hypothécaire. Avec une approche humaine et personnalisée, j’accompagne les propriétaires à travers leurs projets de refinancement, de consolidation de dettes et de planification financière.</p>
-        <p>Mon objectif : vous offrir des solutions claires, transparentes et avantageuses pour que vous repreniez le contrôle sur vos finances.</p>
-      </div>
-      <div><img src="assets/portrait2.jpg" alt="Fondateur - L’Agence Hypothécaire" style="max-width:100%;border-radius:12px"></div>
+  
+  <section id="pourquoi-courtier" class="pourquoi">
+    <div class="container">
+      <h2>Pourquoi faire affaire avec un courtier hypothécaire&nbsp;?</h2>
+      <ul class="checklist">
+        <li><strong>Accès multi‑prêteurs</strong> : comparaison de banques, prêteurs alternatifs et privés pour obtenir le <strong>meilleur taux hypothécaire</strong> et des <strong>conditions flexibles</strong>.</li>
+        <li><strong>Économie de temps et d’argent</strong> : on gère la demande, les documents, la <strong>négociation</strong> et le <strong>montage du dossier</strong>.</li>
+        <li><strong>Dossier de crédit protégé</strong> : moins de demandes multiples, meilleure <strong>cote de crédit</strong> à long terme.</li>
+        <li><strong>Solutions sur mesure</strong> : <strong>refinancement</strong>, <strong>consolidation de dettes</strong>, financement de <strong>rénovations</strong> ou projets.</li>
+        <li><strong>Rémunération transparente</strong> : généralement payée par le prêteur — aucune surprise pour vous.</li>
+      </ul>
     </div>
-  </div>
-</section>
+  </section>
+
 
   <section id="faq" class="faq">
     <div class="container">
@@ -155,13 +168,52 @@
     </div>
   </section>
 
+  
+  <section id="conseils" class="conseils">
+    <div class="container">
+      <h2>Conseils pour votre crédit et vos finances</h2>
+      <div class="grid-2">
+        <article class="tip">
+          <h3>Paiements à temps = cote de crédit forte</h3>
+          <p>Votre <strong>historique de paiement</strong> pèse lourd dans votre <strong>score de crédit</strong>. Automatisez au minimum le <strong>paiement minimum</strong> pour éviter tout retard.</p>
+        </article>
+        <article class="tip">
+          <h3>Gardez un faible taux d’utilisation</h3>
+          <p>Essayez de rester sous <strong>30&nbsp;% d’utilisation</strong> de vos cartes/marges. Un <strong>ratio d’utilisation</strong> élevé peut faire chuter la cote rapidement.</p>
+        </article>
+        <article class="tip">
+          <h3>Vérifiez votre dossier de crédit</h3>
+          <p>Consultez régulièrement votre rapport (Equifax, TransUnion), contestez les erreurs et surveillez les <strong>inquiries</strong> inutiles.</p>
+        </article>
+        <article class="tip">
+          <h3>Réduisez les dettes stratégiquement</h3>
+          <p>Méthode <strong>avalanche</strong> (taux élevés d’abord) ou <strong>boule de neige</strong> (petits soldes d’abord). Le <strong>refinancement hypothécaire</strong> peut accélérer la remise à niveau.</p>
+        </article>
+        <article class="tip">
+          <h3>Diversifiez sans surcharger</h3>
+          <p>Un mix équilibré (carte, prêt, hypothèque) géré sainement aide votre <strong>dossier de crédit</strong> et démontre votre stabilité financière.</p>
+        </article>
+        <article class="tip">
+          <h3>Demandez conseil</h3>
+          <p>Chaque situation est unique. Nous analysons vos <strong>ratios</strong>, dettes et objectifs pour bâtir une solution durable.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
   <section id="contact" class="contact">
     <div class="container">
       <div class="split">
         <div>
           <h2>Nous joindre</h2>
           <p>Parlez à un conseiller. C’est gratuit et sans obligation.</p>
-          <ul class="contact-list"><li><strong>Téléphone:</strong> (418) 952‑9839</li><li><strong>Courriel:</strong> <a href="mailto:Jason@lagencehypothecaire.com">Jason@lagencehypothecaire.com</a></li><li><strong>Adresse:</strong> 1220, boul. Lebourgneuf, bureau 150, Québec (QC) G2K 2G4</li><li><strong>AMF:</strong> #3003226072</li></ul>
+          <ul class="contact-list">
+            <li><strong>Téléphone:</strong> (418) 952‑9839</li>
+            <li><strong>Courriel:</strong> <a href="mailto:Jason@lagencehypothecaire.com">Jason@lagencehypothecaire.com</a></li>
+            <li><strong>Adresse:</strong> 1220, boul. Lebourgneuf, bureau 150, Québec (QC) G2K 2G4</li>
+            <li><strong>AMF:</strong> #3003226072</li>
+          </ul>
           <p class="small">*Ce site fournit de l’information générale. Une analyse complète est requise pour toute recommandation.</p>
         </div>
         <form id="contactForm" class="card form">
@@ -179,7 +231,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div>© 2025 L’Agence Hypothécaire • AMF #3003226072</div>
+      <div>© 2025 L’Agence Hypothécaire &middot; AMF #3003226072</div>
       <nav class="footer-nav">
         <a href="privacy.html">Confidentialité</a>
         <a href="complaints.html">Traitement des plaintes</a>

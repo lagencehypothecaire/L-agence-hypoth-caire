@@ -34,6 +34,7 @@ a{color:var(--brand);text-decoration:none}
 .hero-card-line{height:10px;background:#e9eef9;border-radius:6px;margin:8px 0}
 .hero-card-badge{display:inline-block;background:#eefbf5;color:#067a5a;border:1px solid #b7f0db;padding:4px 8px;border-radius:999px;font-size:12px;margin-top:4px}
 .hero-saving{display:block;font-size:36px;margin:8px 0}
+.hero-photo{max-width:420px;width:100%;height:auto;border-radius:18px;border:1px solid var(--line);box-shadow:var(--shadow);background:#fff}
 
 /* Sections */
 section{padding:56px 0}
@@ -71,15 +72,23 @@ dialog{border:none;border-radius:16px;box-shadow:var(--shadow);padding:0;width:m
 .dialog-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:12px}
 .quiz-result{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;margin-top:10px}
 
-/* Responsive */
+/* New sections */
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.team-card{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:16px;text-align:center}
+.team-card img{width:100%;height:auto;border-radius:12px;border:1px solid var(--line);margin-bottom:8px}
+
+.pourquoi .checklist{list-style:disc;margin-left:18px;color:var(--text)}
+.pourquoi .checklist li{margin:8px 0}
+
+.conseils .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.tip{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:16px}
+.tip h3{margin-top:0}
+
 @media (max-width:900px){
   .hero-inner,.academie .split,.contact .split{grid-template-columns:1fr}
   .services .grid-3{grid-template-columns:1fr}
   .testimonials .grid-2{grid-template-columns:1fr}
   .nav a{margin-left:12px}
+  .team-grid{grid-template-columns:1fr}
+  .conseils .grid-2{grid-template-columns:1fr}
 }
-
-.hero-photo{max-width:420px;width:100%;height:auto;border-radius:18px;border:1px solid var(--line);box-shadow:var(--shadow);background:#fff}
-.about-photo{max-width:520px;width:100%;height:auto;border-radius:18px;border:1px solid var(--line);box-shadow:var(--shadow);background:#fff}
-.about .checklist{margin:12px 0 0 0}
-.about-photo-wrap{display:flex;justify-content:center}
