@@ -1,4 +1,4 @@
-// Simple utilities
+// Utilities
 function equityRatio(value, balance){ return (value - balance) / value; }
 function formatMoney(num){ try{return num.toLocaleString('fr-CA', {style:'currency', currency:'CAD'})}catch(e){return `${num} $`} }
 
@@ -36,7 +36,6 @@ document.getElementById('quizSubmit')?.addEventListener('click', async (e)=>{
        <p>Il existe peut-être des options (alternatives/privées). Parlons-en.</p>
        <a class="btn btn-outline" href="#contact">Nous contacter</a>`;
 
-  // Webhook to CRM (replace with Zoho Flow/CRM webhook)
   try{
     await fetch(window.WEBHOOK_URL, {
       method:'POST',
@@ -68,7 +67,6 @@ document.getElementById('contactForm')?.addEventListener('submit', async (e)=>{
   form.reset();
 });
 
-
 // Mobile menu toggle
 (function(){
   const btn = document.querySelector('.menu-toggle');
@@ -78,7 +76,6 @@ document.getElementById('contactForm')?.addEventListener('submit', async (e)=>{
       const open = nav.classList.toggle('nav--open');
       btn.setAttribute('aria-expanded', String(open));
     });
-    // Close when clicking a link
     nav.querySelectorAll('a').forEach(a=>a.addEventListener('click', ()=>{
       nav.classList.remove('nav--open');
       btn.setAttribute('aria-expanded','false');
