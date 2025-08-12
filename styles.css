@@ -4,8 +4,8 @@
   --bg:#f7f9fc;
   --text:#0c1425;
   --muted:#6c7382;
-  --brand:#153A61;
-  --brand-2:#0A7AC4;
+  --brand:#000080;
+  --brand-2:#000080;
   --card:#ffffff;
   --line:#e6eaf1;
   --shadow:0 10px 30px rgba(16,24,40,.08);
@@ -104,7 +104,7 @@ dialog{border:none;border-radius:16px;box-shadow:var(--shadow);padding:0;width:m
 @media (min-width:1100px){ .team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px} }
 .team-card{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:18px;display:flex;flex-direction:column;gap:10px}
 .team-head{display:flex;align-items:center;gap:12px}
-.team-photo-wrap{width:88px;height:88px;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#f2f5fa;display:flex;align-items:center;justify-content:center}
+.team-photo-wrap{width:140px;height:140px;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#f2f5fa;display:flex;align-items:center;justify-content:center}
 .team-photo{width:100%;height:100%;object-fit:cover}
 .team-photo--half{object-position:center top}
 .team-photo-wrap.placeholder{font-size:12px;color:var(--muted)}
@@ -115,7 +115,7 @@ dialog{border:none;border-radius:16px;box-shadow:var(--shadow);padding:0;width:m
 .team-card img, .team-card .team-avatar{
   width:100%;
   height:auto;
-  max-height:320px;
+  max-height:380px;
   object-fit:cover;
   border-radius:12px;
 }
@@ -125,3 +125,20 @@ dialog{border:none;border-radius:16px;box-shadow:var(--shadow);padding:0;width:m
 @media (max-width:900px){ .site-header .brand img{height:48px} }
 .header-inner{height:76px}
 @media (max-width:900px){ .header-inner{height:68px} }
+
+/* Navy theme additions */
+.btn-primary{background:#000080;color:#fff;border-color:#000080}
+.btn-primary:hover{opacity:.92}
+.btn-outline{border-color:#000080;color:#000080}
+.btn-outline:hover{background:#000080;color:#fff}
+a{color:#000080}
+.hero-card-badge{background:#e6ebff;color:#000080;border-color:#cfd8ff}
+
+/* Enlarged team photos */
+.team-photo, .team-photo--half {
+    max-width: 360px !important;
+}
+
+@media (min-width:1100px){
+  .team-photo-wrap{width:160px;height:160px}
+}
